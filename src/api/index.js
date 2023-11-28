@@ -10,3 +10,9 @@ export const getCharactes = async()=>{
     })
     return await characters.json()
 }
+export const getCharacterQuotes = async(characterName)=>{
+    const quote = await fetch(`https://api.gameofthronesquotes.xyz/v1/character/${characterName}`,{
+        method: 'GET'
+    })
+    return quote.json()
+}

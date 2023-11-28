@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import {Routes,Route,useParams} from 'react-router-dom'
+
 import Header from './components/Header'
 import QuoteCard from './components/QuoteCard'
 import CharacterCard from './components/CharacterCard'
@@ -16,6 +18,7 @@ function App() {
       <div className="characters-container">
         <h2>Explore By Character</h2>
         <div className="characters">
+          
           <CharacterCard/>
         </div>
       </div>

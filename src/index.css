@@ -17,6 +17,10 @@ img{
   width: 100%;
   display: block;
 }
+a{
+  color: black;
+  text-decoration: none;
+}
 .container{
   margin-top: 3rem;
   width: min(500px,95%);
@@ -78,10 +82,10 @@ button{
   align-items: center;
   flex-direction: column;
   justify-content: top;
-  border: 1px solid;
   border-radius: 4px;
   padding:1rem .5rem ;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .character-image{
@@ -95,13 +99,66 @@ button{
   text-align: center;
   margin-top: .5rem;
 }
+.quote-container{
+  width: min(1000px,95%);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-inline:auto;
+  margin-top: 3rem;
+}
+.quote-card{
+  display: flex;
+  flex-direction: column;
+  width: min(500px,95%);
+  margin-inline: auto;
+  border-radius: 5px;
+  padding: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.quote-author{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.author-details{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+.quote-author-house{
+  font-size: .875rem;
+}
+.quote-author-name{
+  font-weight: 500;
+}
+.character-thumbnail{
+  width: 40px;
+  aspect-ratio: 1;
+  object-position: top;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.quote-text{
+  margin-top: .5rem;
+}
+.back-to-home{
+  display: block;
+  background-color: #683a24;
+  width: fit-content;
+  padding: .2rem .5rem;
+  border-radius: 2px;
+  margin-inline:auto;
+  margin-top: 1rem;
+  color: white;
+
+}
 @media (max-width:800px){
   .characters{
     grid-template-columns: repeat(2,1fr);
   }
 }
 @media (max-width:500px){
-  .characters{
+  .characters,.quote-container{
     grid-template-columns: repeat(1,1fr);
   }
 }

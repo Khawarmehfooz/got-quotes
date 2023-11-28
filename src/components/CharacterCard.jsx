@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import {Routes,Route,useParams} from 'react-router-dom'
 import {getCharactes} from '../api'
 
 
@@ -15,10 +16,12 @@ const CharacterCard = ()=>{
             <>
                 {
                     character.map(e=>(
-                        <div key={e.slug} className="character-card">
-                                <img className="character-image" src={`/${e.slug}.jpg`} alt={e.name} />
-                                <h4 className="character-name">{e.name}</h4>
-                        </div>
+                        <a href={`/character/${e.slug}`}>
+                            <div key={e.slug} className="character-card">
+                                    <img className="character-image" src={`/${e.slug}.jpg`} alt={e.name} />
+                                    <h4 className="character-name">{e.name}</h4>
+                            </div>
+                        </a>
                     ))
                 }
             

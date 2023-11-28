@@ -24,7 +24,7 @@ const QuoteCard = ()=>{
                             <button onClick={handleGenerate}>Generate More</button>
                         </div>
                 </>
-            ): 'No Quote Found'
+            ): 'Fetching Quote'
         }
         </>
     )
