@@ -16,7 +16,7 @@ const CharacterCard = ()=>{
                 {
                     character.map(e=>(
                         <div key={e.slug} className="character-card">
-                                <img className="character-image" src={`/public/${e.slug}.jpg`} alt={e.name} />
+                                <img className="character-image" src={`/${e.slug}.jpg`} alt={e.name} />
                                 <h4 className="character-name">{e.name}</h4>
                         </div>
                     ))
