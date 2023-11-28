@@ -58,3 +58,50 @@ button{
   border: none;
   cursor: pointer;
 }
+.characters-container{
+  margin: 3rem 0;
+  width: min(1200px,95%);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-inline: auto;
+  padding: 2rem;
+}
+.characters-container h2{
+  margin-bottom: 1rem;
+}
+.characters{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4,1fr);
+}
+.character-card{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: top;
+  border: 1px solid;
+  border-radius: 4px;
+  padding:1rem .5rem ;
+  cursor: pointer;
+}
+
+.character-image{
+  aspect-ratio: 1;
+  width: 200px;
+  object-position: top;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.character-name{
+  text-align: center;
+  margin-top: .5rem;
+}
+@media (max-width:800px){
+  .characters{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width:500px){
+  .characters{
+    grid-template-columns: repeat(1,1fr);
+  }
+}

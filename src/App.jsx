@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import QuoteCard from './components/QuoteCard'
+import CharacterCard from './components/CharacterCard'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -10,6 +11,12 @@ function App() {
         <Header/>
         <div className="quote-card-container">
           <QuoteCard/>
+        </div>
+      </div>
+      <div className="characters-container">
+        <h2>Explore By Character</h2>
+        <div className="characters">
+          <CharacterCard/>
         </div>
       </div>
     </>
