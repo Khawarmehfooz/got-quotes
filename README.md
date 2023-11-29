@@ -1,6 +1,6 @@
 # Game of Thrones Quotes
 
-![Game of Thrones Quotes Logo](./public/got-banner.jpg)
+![Game of Thrones Quotes Logo](./public/got-banner.jpg){width=100%}
 
 Welcome to the "Game of Thrones Quotes" project! This React app fetches quotes from the `gameofthronesquotes.xyz` API and displays them. Users can generate a random quote or explore quotes by characters.
 
